@@ -1,3 +1,5 @@
+
+
 <?php require basePath('views/partials/head.php');?>
 
 <?php require basePath('views/partials/navbar.php');?>
@@ -198,5 +200,5 @@
        
       </section>
 
-      <?php require basePath('views/partials/bottom-banner.php');?>
+    <?php require basePath('views/partials/bottom-banner.php');?>
     <?php require basePath('views/partials/footer.php');?>
