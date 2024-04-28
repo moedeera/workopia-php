@@ -18,7 +18,7 @@
               <h2 class="text-xl font-semibold">Software Engineer</h2>
               <p class="text-gray-700 text-lg mt-2">
                 We are seeking a skilled software engineer to develop
-                high-quality software solutions.
+                high-quality software solutions.???
               </p>
               <ul class="my-4 bg-gray-100 p-4 rounded">
                 <li class="mb-2"><strong>Salary:</strong> $80,000</li>
