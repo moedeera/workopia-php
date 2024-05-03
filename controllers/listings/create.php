@@ -1,2 +1,2 @@
-<?php
-echo 'create listings';
+
+<?php require basePath('views/listings/create.view.php');?>
