@@ -1,11 +1,10 @@
-<?php require basePath('views/partials/head.php');?>
+<?php loadPartial("head");?>
 
-<?php require basePath('views/partials/navbar.php');?>
+<?php loadPartial('navbar');?>
 
-<?php require basePath('views/partials/showcase-search.php');?>
+<?php loadPartial('showcase-search');?>
 
-<?php require basePath('views/partials/top-banner.php');?>
-
+<?php loadPartial('top-banner');?>
 
     <!-- Job Listings -->
     <section>

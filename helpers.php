@@ -9,9 +9,8 @@
 
 function basePath($path = '')
 {
-  // return __DIR__ . '/' . $path;
-  
-    // This will return the directory path even if $path is empty
+ 
+   // This will return the directory path even if $path is empty
     return __DIR__ . '/' . trim($path, '/');
 }
 function baseBath2 ($path){
@@ -38,10 +37,11 @@ if (file_exists($viewPath)){
 function loadPartial($name) {
   if (empty($name)) {
     echo "Error: The name parameter is required and cannot be empty.";
-    return;
-}
-  require basePath("views/partials/{$name}.php"); // Check what this actually returns
 
+    return;
+    }
+  
+require basePath("views/partials/{$name}.php"); // Check what this actually ret
 }
 
 /** Inspect a value
