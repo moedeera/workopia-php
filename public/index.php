@@ -6,22 +6,23 @@ require '../helpers.php';
 
 // require baseBath2('views/home.view.php');
 
-$routes = [
-'/'=>'controllers/home.php',
-'/listings'=>'controllers/listings/index.php',
-'/listings/create'=>'controllers/listings/create.php',
-'/listings/create/add'=>'controllers/listings/create.php',
-'404'=>'controllers/error/404.php'
-];
 
-if (array_key_exists($uri, $routes)){
-    require ((basePath($routes[$uri])));
-} else {
-    require basePath($routes['404']);
-}
+require basePath('Router.php');
 
+$router  = new Router();
+
+$routes = require basePath('routes.php');
 
 $uri = $_SERVER['REQUEST_URI'];
+$method =$_SERVER['REQUEST_METHOD'];
+
+$router->route($uri,$method);
+
+// inspect($uri);
+// inspect($method);
+
+
+
 
 // inspectAndDie($uri);
 
